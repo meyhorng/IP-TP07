@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" class="loader" href="http://localhost:8000/asset/?assetPath=List_viewer/loader.css">
+    <link rel="stylesheet" class="style" href="http://localhost:8000/asset/?assetPath=List_Viewer/style.css">
+    <title>List And view</title>
+</head>
+<body>
+    <div id="container">
+        <div class="scrollable">
+            
+            
+            
+        </div>
+        <div class="pageNum">
+            
+        </div>
+    </div>
+    <!-- <script class="script" src="http://localhost:8000/asset/?assetPath=List_Viewer/app.js" ></script> -->
+    <script>
+        var script = document.createElement('script');
+
+        script.setAttribute( 'src', `${window.location.origin}/asset/?assetPath=List_Viewer/app.js`);
+        document.head.appendChild(script);
+        document.querySelector('.loader').href=`${window.location.origin}/asset/?assetPath=List_Viewer/loader.css`
+        document.querySelector('.style').href=`${window.location.origin}/asset/?assetPath=List_Viewer/style.css`
+    </script>
+</body>
+</html>
